@@ -1,10 +1,10 @@
 # Deploy packages
 *.zip
 
-# Design source (keep SVG exports in repo)
+# Design source binaries
 *.ai
 
-# Local / personal
+# Local / personal references
 assets/images/refs-cliente/
 .DS_Store
 Thumbs.db
@@ -13,9 +13,16 @@ desktop.ini
 # Dependencies / tooling
 node_modules/
 package-lock.json
+package.json
 .npm/
 
-# Editor
+# Editor / OS
 .cursor/
 .vscode/
 *.log
+*.tmp
+~$*
+
+# Optional local env
+.env
+.env.*
