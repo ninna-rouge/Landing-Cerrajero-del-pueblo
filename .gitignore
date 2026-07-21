@@ -1,0 +1,21 @@
+# Deploy packages
+*.zip
+
+# Design source (keep SVG exports in repo)
+*.ai
+
+# Local / personal
+assets/images/refs-cliente/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencies / tooling
+node_modules/
+package-lock.json
+.npm/
+
+# Editor
+.cursor/
+.vscode/
+*.log

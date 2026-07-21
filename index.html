@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cerrajero del Pueblo — Cerrajería profesional 24/7 para hogares, empresas y vehículos. Servicio rápido, confiable y garantizado."
+    />
+    <meta name="author" content="Cerrajero del Pueblo" />
+    <meta name="theme-color" content="#0E3B2E" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cerrajero del Pueblo | Cerrajería Profesional 24/7" />
+    <meta
+      property="og:description"
+      content="Seguridad y confianza cuando más lo necesitas. Servicio profesional para hogares, empresas y vehículos."
+    />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:image" content="https://cerrajerodelpueblo.cl/assets/images/hero-door.jpg" />
+    <link rel="canonical" href="https://cerrajerodelpueblo.cl/" />
+    <title>Cerrajero del Pueblo | Cerrajería Profesional 24/7</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon-48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Locksmith",
+        "name": "Cerrajero del Pueblo",
+        "description": "Cerrajería profesional para hogares, empresas y vehículos en el sur oriente de Santiago.",
+        "telephone": "+56978530417",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Puente Alto" },
+          { "@type": "AdministrativeArea", "name": "La Florida" },
+          { "@type": "AdministrativeArea", "name": "Peñalolén" },
+          { "@type": "AdministrativeArea", "name": "La Pintana" },
+          { "@type": "AdministrativeArea", "name": "Pirque" },
+          { "@type": "AdministrativeArea", "name": "San José de Maipo" },
+          { "@type": "AdministrativeArea", "name": "La Granja" }
+        ],
+        "sameAs": ["https://www.instagram.com/cerrajero_del_pueblo/"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="nav" id="navbar">
+      <div class="wrap-wide">
+        <div class="nav-inner">
+          <a href="#inicio" class="nav-logo" aria-label="Cerrajero del Pueblo - Inicio">
+            <img
+              src="assets/images/logo-nav.svg?v=3"
+              alt="Cerrajero del Pueblo"
+              width="200"
+              height="78"
+              decoding="async"
+            />
+          </a>
+
+          <nav aria-label="Principal">
+            <ul class="nav-links">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#proceso">Proceso</a></li>
+              <li><a href="#precios">Precios</a></li>
+              <li><a href="#cobertura">Cobertura</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <a class="btn btn-brass btn-sm nav-cta" data-whatsapp="service" href="https://wa.me/56978530417">
+            Solicitar Servicio
+          </a>
+
+          <button
+            type="button"
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <i data-lucide="menu" width="22" height="22" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="drawer" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú">
+      <button type="button" class="drawer-close" id="mobile-close" aria-label="Cerrar menú">
+        <i data-lucide="x" width="24" height="24" aria-hidden="true"></i>
+      </button>
+      <nav aria-label="Menú móvil">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#precios">Precios</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-brass" data-whatsapp="service" href="https://wa.me/56978530417">Solicitar Servicio</a>
+    </div>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-label="Presentación">
+        <div class="hero-bg" aria-hidden="true">
+          <img
+            src="assets/images/hero-cinematic.jpg"
+            alt="Puerta residencial con chapa brass y luz cálida al anochecer"
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+
+        <div class="hero-body">
+          <div class="wrap">
+            <div class="hero-lockup">
+              <img
+                class="hero-mark"
+                src="assets/images/logo.svg?v=4"
+                alt=""
+                width="96"
+                height="96"
+                aria-hidden="true"
+              />
+              <p class="hero-brand-name">Cerrajero del Pueblo</p>
+              <p class="hero-tag">Cerrajería profesional · Disponible 24/7</p>
+              <span class="hero-rule" aria-hidden="true"></span>
+            </div>
+
+            <h1 class="hero-title">Seguridad y confianza cuando más lo necesitas</h1>
+            <p class="hero-copy">
+              Aperturas, cambios e instalaciones para hogares, departamentos, empresas y vehículos.
+              Respuesta rápida, trabajo limpio y disponible las 24 horas.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-brass btn-lg" data-whatsapp="hero" href="https://wa.me/56978530417">
+                <i data-lucide="message-circle" width="18" height="18" aria-hidden="true"></i>
+                Contactar por WhatsApp
+              </a>
+              <a class="btn btn-ghost btn-lg" href="tel:+56978530417">
+                <i data-lucide="phone" width="18" height="18" aria-hidden="true"></i>
+                Llamar ahora
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust" id="beneficios" aria-label="Beneficios">
+        <div class="trust-atmos" aria-hidden="true">
+          <span class="trust-orb trust-orb-a"></span>
+          <span class="trust-orb trust-orb-b"></span>
+        </div>
+
+        <div class="wrap">
+          <header class="trust-intro reveal">
+            <p class="eyebrow">Compromiso</p>
+            <h2 class="trust-title">Por qué elegirnos</h2>
+          </header>
+
+          <ol class="trust-grid">
+            <li class="trust-tile reveal" data-trust="clock">
+              <div class="trust-icon" aria-hidden="true">
+                <i data-lucide="clock-3"></i>
+              </div>
+              <div class="trust-body">
+                <h3>Atención 24/7</h3>
+                <p>Día y noche para emergencias y servicios programados.</p>
+              </div>
+            </li>
+            <li class="trust-tile reveal d1" data-trust="zap">
+              <div class="trust-icon" aria-hidden="true">
+                <i data-lucide="zap"></i>
+              </div>
+              <div class="trust-body">
+                <h3>Llegamos rápido</h3>
+                <p>A domicilio, empresa o vehículo cuando más lo necesitas.</p>
+              </div>
+            </li>
+            <li class="trust-tile reveal d2" data-trust="shield">
+              <div class="trust-icon" aria-hidden="true">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="trust-body">
+                <h3>Trabajo garantizado</h3>
+                <p>Materiales de calidad y respaldo real en cada servicio.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="block bg-mist" id="servicios" aria-labelledby="servicios-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Servicios</p>
+            <h2 class="display" id="servicios-title">Soluciones de cerrajería</h2>
+            <p class="lead">
+              Desde una apertura de emergencia hasta instalaciones completas para hogares y empresas.
+            </p>
+          </header>
+
+          <div class="media-rail" aria-label="Ámbitos de servicio">
+            <figure class="media-rail-item reveal">
+              <img
+                src="assets/images/servicio-hogar.jpg"
+                alt="Puerta de hogar con cerradura y manilla de latón"
+                width="1200"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <span>Hogares</span>
+                <em>Aperturas, cambios e instalaciones residenciales</em>
+              </figcaption>
+            </figure>
+            <figure class="media-rail-item reveal d1">
+              <img
+                src="assets/images/servicio-llaves.jpg"
+                alt="Llaves y cilindros de precisión sobre banco de trabajo"
+                width="1200"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <span>Llaves y chapas</span>
+                <em>Duplicado, reparación y acabado profesional</em>
+              </figcaption>
+            </figure>
+            <figure class="media-rail-item reveal d2">
+              <img
+                src="assets/images/servicio-empresas.jpg"
+                alt="Acceso comercial con manilla metálica en edificio de oficinas"
+                width="1200"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <span>Empresas</span>
+                <em>Soluciones corporativas para oficinas y locales</em>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="svc-grid">
+            <article class="svc reveal" data-svc="door">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="door-open"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Apertura de puertas</h3>
+                <p>Aperturas sin daño cuando es posible, con técnica profesional.</p>
+              </div>
+            </article>
+            <article class="svc reveal d1" data-svc="lock">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="lock-keyhole"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Cambio de cerraduras</h3>
+                <p>Reemplazo seguro para reforzar la protección de tu espacio.</p>
+              </div>
+            </article>
+            <article class="svc reveal d2" data-svc="key">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="key-round"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Duplicado de llaves</h3>
+                <p>Copia exacta con acabado limpio y confiable.</p>
+              </div>
+            </article>
+            <article class="svc reveal d3" data-svc="car">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="car"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Cerrajería automotriz</h3>
+                <p>Apertura, mantención y soluciones para vehículos.</p>
+              </div>
+            </article>
+            <article class="svc reveal d4" data-svc="wrench">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="wrench"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Instalación de chapas</h3>
+                <p>Instalación precisa con acabado impecable.</p>
+              </div>
+            </article>
+            <article class="svc reveal d5" data-svc="repair">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="settings-2"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Reparación de chapas</h3>
+                <p>Reparación y mantención para recuperar el óptimo funcionamiento.</p>
+              </div>
+            </article>
+            <article class="svc reveal d6" data-svc="safe">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="box"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Apertura de cajas fuertes</h3>
+                <p>Intervención especializada con discreción y cuidado.</p>
+              </div>
+            </article>
+            <article class="svc reveal d7" data-svc="building">
+              <div class="svc-icon" aria-hidden="true">
+                <i data-lucide="building-2"></i>
+              </div>
+              <div class="svc-body">
+                <h3>Soluciones para empresas</h3>
+                <p>Servicio corporativo para oficinas y locales comerciales.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="block bg-green on-dark" id="precios" aria-labelledby="precios-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Tarifas</p>
+            <h2 class="display" id="precios-title">Lista de precios</h2>
+            <p class="lead">
+              Valores transparentes. Toca cada servicio para ver en qué consiste. El detalle final se
+              confirma en terreno. La visita se incluye sin costo al contratar un servicio.
+            </p>
+          </header>
+
+          <div class="price-tabs reveal" role="tablist" aria-label="Categorías">
+            <button type="button" class="is-active" role="tab" aria-selected="true" data-pricing-tab="general">
+              <i data-lucide="door-open" width="16" height="16" aria-hidden="true"></i>
+              Cerrajería General
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-pricing-tab="auto">
+              <i data-lucide="car" width="16" height="16" aria-hidden="true"></i>
+              Cerrajería Automotriz
+            </button>
+          </div>
+
+          <div class="price-panel is-active" role="tabpanel" data-pricing-panel="general">
+            <div class="price-board reveal">
+              <div class="price-board-head" aria-hidden="true">
+                <span class="price-board-mark"></span>
+                <span>Hogar y comercio</span>
+              </div>
+              <div class="price-list">
+                <article class="price-row is-visit">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-g-visita"
+                    id="price-btn-g-visita"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="map-pin"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Valor visita</span>
+                        <span class="price-hint">Incluida al contratar un servicio</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$15.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-g-visita" role="region" aria-labelledby="price-btn-g-visita" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Evaluación a domicilio</p>
+                      <p>
+                        Nos acercamos a tu domicilio o local para revisar el caso y cotizar con claridad.
+                        <strong>Si contratas un servicio, la visita no se cobra: queda incluida.</strong>
+                        Solo se aplica el valor de visita cuando, tras la evaluación, no se realiza ningún
+                        trabajo. En comunas preferentes (Puente Alto y La Florida) no hay gasto de traslado;
+                        en el resto de la cobertura, el desplazamiento se confirma según distancia.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Visita incluida al contratar un servicio</li>
+                        <li>Diagnóstico presencial y cotización clara</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row is-featured">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-g-apertura"
+                    id="price-btn-g-apertura"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="door-open"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">
+                          Apertura de chapa
+                          <em class="price-badge">Más pedido</em>
+                        </span>
+                        <span class="price-hint">Sin daño a la puerta cuando es posible</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$25.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-g-apertura" role="region" aria-labelledby="price-btn-g-apertura" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Apertura de emergencia</p>
+                      <p>
+                        Servicio de apertura de puertas de hogar o comercio cuando no es posible ingresar
+                        por pérdida de llaves, chapa trabada o falla del mecanismo. Se priorizan técnicas
+                        no destructivas para preservar la puerta, el marco y la cerradura. También
+                        realizamos <strong>reparación y mantención de chapas</strong> cuando el problema
+                        lo permite, para recuperar un cierre seguro sin necesariamente reemplazar.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Métodos de bajo impacto</li>
+                        <li>Reparación y mantención cuando aplica</li>
+                        <li>Verificación de cierre al finalizar</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-g-cambio"
+                    id="price-btn-g-cambio"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="refresh-cw"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Cambio de chapa (misma)</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$25.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-g-cambio" role="region" aria-labelledby="price-btn-g-cambio" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Reemplazo compatible</p>
+                      <p>
+                        Sustitución de la chapa existente por un modelo equivalente, manteniendo el tipo
+                        de instalación de la puerta. Indicado cuando la cerradura presenta desgaste, falla
+                        mecánica o pérdida de seguridad. Si el mecanismo aún puede recuperarse, también
+                        ofrecemos <strong>reparación y mantención de chapas</strong> para extender su vida útil.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Instalación alineada y firme</li>
+                        <li>Opción de reparación o mantención</li>
+                        <li>Prueba de apertura y cierre</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-g-instalacion"
+                    id="price-btn-g-instalacion"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="wrench"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Instalación de chapa</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$30.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-g-instalacion" role="region" aria-labelledby="price-btn-g-instalacion" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Montaje profesional</p>
+                      <p>
+                        Instalación completa de una chapa nueva en puerta de acceso. Incluye posicionamiento,
+                        fijación, ajuste de pestillo y verificación de operación. Se orienta la elección
+                        según el uso (casa, departamento o local) y el nivel de seguridad requerido.
+                        Además, realizamos <strong>reparación y mantención de chapas</strong> ya instaladas
+                        para recuperar un funcionamiento confiable.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Asesoría según tipo de puerta</li>
+                        <li>Reparación y mantención de chapas</li>
+                        <li>Ajuste final en terreno</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-g-combinacion"
+                    id="price-btn-g-combinacion"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="key-round"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Cambio de combinación (llave)</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$25.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-g-combinacion" role="region" aria-labelledby="price-btn-g-combinacion" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Nuevo juego de llaves</p>
+                      <p>
+                        Recodificación del cilindro o mecanismo para invalidar las llaves anteriores y
+                        entregar un juego nuevo. Recomendado ante pérdida de llaves, término de arriendo,
+                        cambio de residentes o refuerzo preventivo de seguridad.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Llaves previas quedan sin uso</li>
+                        <li>Entrega de llaves nuevas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-panel" role="tabpanel" data-pricing-panel="auto" hidden>
+            <div class="price-board">
+              <div class="price-board-head" aria-hidden="true">
+                <span class="price-board-mark"></span>
+                <span>Vehículos</span>
+              </div>
+              <div class="price-list">
+                <article class="price-row is-visit">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-a-visita"
+                    id="price-btn-a-visita"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="map-pin"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Valor visita</span>
+                        <span class="price-hint">Incluida al contratar un servicio</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$15.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-a-visita" role="region" aria-labelledby="price-btn-a-visita" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Evaluación en sitio</p>
+                      <p>
+                        Nos acercamos hasta la ubicación del vehículo para revisar chapa, llave o sistema
+                        de contacto y explicar la solución recomendada.
+                        <strong>Si contratas un servicio, la visita no se cobra: queda incluida.</strong>
+                        Solo se aplica cuando, tras la evaluación, no se realiza ningún trabajo.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Visita incluida al contratar un servicio</li>
+                        <li>Presupuesto previo a la intervención</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row is-featured">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-a-apertura"
+                    id="price-btn-a-apertura"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="car"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">
+                          Apertura de puerta
+                          <em class="price-badge">Más pedido</em>
+                        </span>
+                        <span class="price-hint">Acceso profesional al vehículo</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$30.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-a-apertura" role="region" aria-labelledby="price-btn-a-apertura" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Apertura de puerta</p>
+                      <p>
+                        Apertura de la puerta del vehículo cuando las llaves quedaron adentro o no es
+                        posible ingresar. Trabajamos con técnicas profesionales de acceso, cuidando
+                        gomas, pintura y mecanismos. También realizamos
+                        <strong>reparación y mantención de chapas</strong> automotrices cuando el caso
+                        lo requiere.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Apertura de la puerta del vehículo</li>
+                        <li>Reparación y mantención de chapas</li>
+                        <li>Protección de carrocería y sellos</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-a-cambio"
+                    id="price-btn-a-cambio"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="settings-2"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Cambio de chapa o mantención</span>
+                        <span class="price-hint">La chapa la aporta el cliente</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$30.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-a-cambio" role="region" aria-labelledby="price-btn-a-cambio" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Reparación, mantención o cambio</p>
+                      <p>
+                        Diagnóstico y corrección de chapas automotrices con operación irregular: dureza,
+                        atascamiento o cierre incompleto. Realizamos
+                        <strong>reparación y mantención de chapas</strong> y, si corresponde reemplazo,
+                        <strong>la chapa la pone el cliente</strong>; nosotros nos encargamos de la
+                        instalación y del ajuste en el vehículo.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Reparación y mantención de chapas</li>
+                        <li>Chapa aportada por el cliente (si hay cambio)</li>
+                        <li>Instalación y prueba de funcionamiento</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-a-llave"
+                    id="price-btn-a-llave"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="key-round"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Fabricación de llave (chapa contacto)</span>
+                        <span class="price-hint">Desde valor base</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$45.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-a-llave" role="region" aria-labelledby="price-btn-a-llave" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Duplicado / fabricación</p>
+                      <p>
+                        Elaboración de llave de contacto para restablecer el encendido del vehículo. El
+                        valor indicado corresponde al servicio base en modelos estándar; si el sistema
+                        requiere programación o un procedimiento especial, se informa en la evaluación previa.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Valor base para casos estándar</li>
+                        <li>Aviso previo ante complejidad extra</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="price-row">
+                  <button
+                    type="button"
+                    class="price-row-toggle"
+                    aria-expanded="false"
+                    aria-controls="price-a-reparacion"
+                    id="price-btn-a-reparacion"
+                  >
+                    <div class="price-meta">
+                      <span class="price-ico" aria-hidden="true">
+                        <i data-lucide="shield-check"></i>
+                      </span>
+                      <div class="price-copy">
+                        <span class="price-name">Reparación de chapa contacto</span>
+                        <span class="price-hint">Sujeto a evaluación técnica</span>
+                      </div>
+                    </div>
+                    <span class="price-row-end">
+                      <strong>$50.000</strong>
+                      <i data-lucide="chevron-down" class="price-chevron" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                  <div class="price-detail" id="price-a-reparacion" role="region" aria-labelledby="price-btn-a-reparacion" hidden>
+                    <div class="price-detail-inner">
+                      <p class="price-detail-kicker">Diagnóstico y reparación</p>
+                      <p>
+                        Intervención sobre la chapa de contacto cuando la llave no gira, se atasca o el
+                        arranque falla por ese mecanismo. Se inicia con diagnóstico en terreno para definir
+                        el alcance; el valor base del servicio es $50.000 y cualquier variación se informa
+                        antes de intervenir.
+                      </p>
+                      <ul class="price-detail-points">
+                        <li>Evaluación técnica antes de intervenir</li>
+                        <li>Alcance y costo confirmados al cliente</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-extras reveal">
+            <aside class="price-note" role="note">
+              <i data-lucide="info" width="18" height="18" aria-hidden="true"></i>
+              <p>
+                La visita se incluye sin costo al contratar un servicio. La reparación de chapa de
+                contacto parte desde $50.000 y queda sujeta a evaluación técnica. Emergencias con
+                recargo fijo de $15.000.
+              </p>
+            </aside>
+            <a class="btn btn-brass price-cta" data-whatsapp="pricing" href="https://wa.me/56978530417">
+              <i data-lucide="message-circle" width="16" height="16" aria-hidden="true"></i>
+              Cotizar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="block bg-navy on-dark" id="horarios" aria-labelledby="horarios-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Disponibilidad</p>
+            <h2 class="display" id="horarios-title">Tarifas horarias</h2>
+            <p class="lead">
+              Atendemos los 7 días. El valor del servicio se mantiene; solo cambia si hay
+              recargo por horario de emergencia.
+            </p>
+          </header>
+
+          <div class="hours reveal">
+            <article class="hour">
+              <div class="hour-head">
+                <span class="hour-icon" aria-hidden="true">
+                  <i data-lucide="sun" width="20" height="20"></i>
+                </span>
+                <span class="hour-chip">Diurno</span>
+              </div>
+              <h3>Horario normal</h3>
+              <p class="hour-sub">Lunes a domingo</p>
+              <div class="hour-times">
+                <div class="hour-time">
+                  <span>Desde</span>
+                  <b>09:00</b>
+                </div>
+                <span class="hour-sep" aria-hidden="true"></span>
+                <div class="hour-time">
+                  <span>Hasta</span>
+                  <b>19:00</b>
+                </div>
+              </div>
+              <ul class="hour-points">
+                <li>Pagas solo el valor del servicio contratado</li>
+                <li>Sin cargo extra por horario</li>
+                <li>Ideal para trabajos programados</li>
+              </ul>
+              <p class="hour-note">
+                <i data-lucide="check" width="14" height="14" aria-hidden="true"></i>
+                Sin recargo adicional
+              </p>
+            </article>
+
+            <article class="hour hour-night">
+              <div class="hour-head">
+                <span class="hour-icon" aria-hidden="true">
+                  <i data-lucide="moon" width="20" height="20"></i>
+                </span>
+                <span class="hour-chip">Nocturno</span>
+              </div>
+              <h3>Horario de emergencia</h3>
+              <p class="hour-sub">Lunes a domingo · noche y madrugada</p>
+              <div class="hour-times">
+                <div class="hour-time">
+                  <span>Desde</span>
+                  <b>19:00</b>
+                </div>
+                <span class="hour-sep" aria-hidden="true"></span>
+                <div class="hour-time">
+                  <span>Hasta</span>
+                  <b>09:00</b>
+                </div>
+              </div>
+              <ul class="hour-points">
+                <li>Se suma al valor del servicio (no lo reemplaza)</li>
+                <li>Monto fijo, sin sorpresas</li>
+                <li>Para urgencias fuera del horario diurno</li>
+              </ul>
+              <p class="hour-note hour-note-fee">
+                <span>Recargo fijo</span>
+                <strong>$15.000</strong>
+              </p>
+            </article>
+          </div>
+
+          <aside class="hours-example reveal" role="note">
+            <i data-lucide="info" width="18" height="18" aria-hidden="true"></i>
+            <p>
+              <strong>Ejemplo:</strong> una apertura de chapa ($25.000) a las 22:30 queda en
+              $25.000 + $15.000 de recargo = <strong>$40.000</strong>. El mismo servicio a las
+              11:00 se cobra solo $25.000.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="block bg-paper" id="cobertura" aria-labelledby="cobertura-title">
+        <div class="wrap">
+          <div class="cover">
+            <div class="reveal">
+              <p class="eyebrow">Zona de servicio</p>
+              <h2 class="display" id="cobertura-title">Cobertura</h2>
+              <p class="lead">
+                Operamos en el sector sur oriente de Santiago, con foco preferente en
+                Puente Alto y La Florida.
+              </p>
+              <ul class="cover-list">
+                <li class="is-featured">
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">Puente Alto</span>
+                  <span class="cover-pill" title="Sin gasto de traslado en esta comuna">
+                    Sin traslado
+                  </span>
+                </li>
+                <li class="is-featured">
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">La Florida</span>
+                  <span class="cover-pill" title="Sin gasto de traslado en esta comuna">
+                    Sin traslado
+                  </span>
+                </li>
+                <li>
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">Peñalolén</span>
+                </li>
+                <li>
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">La Pintana</span>
+                </li>
+                <li>
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">Pirque</span>
+                </li>
+                <li>
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">San José de Maipo</span>
+                </li>
+                <li>
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                  <span class="cover-name">La Granja</span>
+                </li>
+              </ul>
+              <p class="cover-note">
+                En las comunas con atención preferente <strong>no se cobra gasto de traslado</strong>.
+                En el resto de la cobertura se incluye una
+                <strong>tarifa de desplazamiento según la distancia</strong>; te la confirmamos al
+                coordinar el servicio.
+              </p>
+              <a class="btn btn-green" data-whatsapp="coverage" href="https://wa.me/56978530417">
+                <i data-lucide="message-circle" width="16" height="16" aria-hidden="true"></i>
+                Consultar cobertura
+              </a>
+            </div>
+            <div class="map reveal d1">
+              <div
+                id="coverage-map"
+                class="map-canvas"
+                role="img"
+                aria-label="Mapa de cobertura con Puente Alto y La Florida destacadas"
+              ></div>
+              <div class="map-label">Sur oriente · Puente Alto y La Florida</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block bg-paper" id="proceso" aria-labelledby="proceso-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Tranquilidad</p>
+            <h2 class="display" id="proceso-title">Cómo trabajamos</h2>
+            <p class="lead">
+              Te acompañamos de punta a punta: claro, cercano y sin sorpresas.
+            </p>
+          </header>
+
+          <ol class="process-grid">
+            <li class="process-card reveal">
+              <figure class="process-media">
+                <img
+                  src="assets/images/proceso-1-contacto.jpg"
+                  alt="Teléfono y llave de latón sobre mesa, simbolizando el primer contacto por WhatsApp"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="process-body">
+                <span class="process-num" aria-hidden="true">01</span>
+                <h3>Nos escribes</h3>
+                <p>Cuentas qué necesitas por WhatsApp o llamada. Te orientamos al tiro.</p>
+              </div>
+            </li>
+            <li class="process-card reveal d1">
+              <figure class="process-media">
+                <img
+                  src="assets/images/proceso-2-llegada.jpg"
+                  alt="Cerrajero del Pueblo llegando en vehículo de servicio a un domicilio"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="process-body">
+                <span class="process-num" aria-hidden="true">02</span>
+                <h3>Confirmamos y vamos</h3>
+                <p>Te avisamos tiempo estimado y valor referencial antes de salir.</p>
+              </div>
+            </li>
+            <li class="process-card reveal d2">
+              <figure class="process-media">
+                <img
+                  src="assets/images/proceso-3-trabajo.jpg"
+                  alt="Manos instalando una cerradura de latón con detalle y precisión"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="process-body">
+                <span class="process-num" aria-hidden="true">03</span>
+                <h3>Resolvemos en terreno</h3>
+                <p>Trabajamos con cuidado, te explicamos qué hacemos y por qué.</p>
+              </div>
+            </li>
+            <li class="process-card reveal d3">
+              <figure class="process-media">
+                <img
+                  src="assets/images/proceso-4-listo.jpg"
+                  alt="Cerrajero del Pueblo entregando el trabajo terminado al cliente"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="process-body">
+                <span class="process-num" aria-hidden="true">04</span>
+                <h3>Quedas tranquilo</h3>
+                <p>Revisamos juntos el resultado y quedas con respaldo real.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="block bg-green-soft" id="garantia" aria-labelledby="garantia-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Respaldo</p>
+            <h2 class="display" id="garantia-title">Nuestra garantía</h2>
+            <p class="lead">Compromisos simples para que confíes desde el primer mensaje.</p>
+          </header>
+
+          <div class="promise-grid">
+            <article class="promise reveal" data-promise="shield">
+              <div class="promise-icon" aria-hidden="true">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="promise-body">
+                <h3>Trabajo garantizado</h3>
+                <p>Si algo no queda bien, lo revisamos y lo solucionamos contigo.</p>
+              </div>
+            </article>
+            <article class="promise reveal d1" data-promise="price">
+              <div class="promise-icon" aria-hidden="true">
+                <i data-lucide="circle-dollar-sign"></i>
+              </div>
+              <div class="promise-body">
+                <h3>Precio claro</h3>
+                <p>Te informamos antes. Sin cargos escondidos ni letras chicas.</p>
+              </div>
+            </article>
+            <article class="promise reveal d2" data-promise="care">
+              <div class="promise-icon" aria-hidden="true">
+                <i data-lucide="heart-handshake"></i>
+              </div>
+              <div class="promise-body">
+                <h3>Trato respetuoso</h3>
+                <p>Llegamos puntuales, trabajamos limpio y cuidamos tu espacio.</p>
+              </div>
+            </article>
+            <article class="promise reveal d3" data-promise="file">
+              <div class="promise-icon" aria-hidden="true">
+                <i data-lucide="file-check-2"></i>
+              </div>
+              <div class="promise-body">
+                <h3>Servicio respaldado</h3>
+                <p>Empresa local con trayectoria real en el sur oriente de Santiago.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="block block-about bg-deep on-dark" id="nosotros" aria-labelledby="nosotros-title">
+        <div class="wrap">
+          <div class="about">
+            <figure class="about-media reveal">
+              <img
+                src="assets/images/nosotros-trayectoria.jpg"
+                alt="Cerrajero del Pueblo de espaldas llegando a un hogar al atardecer, con el uniforme y logo de la empresa"
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="about-copy">
+              <header class="section-head reveal">
+                <p class="eyebrow">Trayectoria</p>
+                <h2 class="display" id="nosotros-title">¿Por qué elegirnos?</h2>
+                <p class="lead">
+                  Siete años protegiendo hogares, vehículos y negocios en el sur oriente de
+                  Santiago.
+                </p>
+              </header>
+              <div class="stats reveal d1">
+                <div class="stat"><b>7</b><span>Años de experiencia</span></div>
+                <div class="stat"><b>+500</b><span>Clientes atendidos</span></div>
+                <div class="stat"><b>24/7</b><span>Disponibilidad total</span></div>
+                <div class="stat"><b>100%</b><span>Trabajo garantizado</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="band-voice">
+        <section class="block quotes-section" id="opiniones" aria-labelledby="opiniones-title">
+          <div class="wrap">
+            <header class="section-head reveal">
+              <p class="eyebrow">Testimonios</p>
+              <h2 class="display" id="opiniones-title">Opiniones de clientes</h2>
+              <p class="lead">La confianza se construye servicio a servicio.</p>
+            </header>
+            <div class="quotes">
+              <article class="quote reveal" data-tone="green">
+                <div class="quote-stars" aria-label="5 de 5 estrellas">
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                </div>
+                <blockquote>
+                  “Llegaron en minutos, abrieron sin dañar la puerta y se notaba el profesionalismo.”
+                </blockquote>
+                <cite>María F.</cite>
+              </article>
+              <article class="quote reveal d1" data-tone="navy">
+                <div class="quote-stars" aria-label="5 de 5 estrellas">
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                </div>
+                <blockquote>
+                  “Excelente atención a las 2 de la madrugada. Transparentes con el precio y muy correctos.”
+                </blockquote>
+                <cite>Carlos R.</cite>
+              </article>
+              <article class="quote reveal d2" data-tone="brass">
+                <div class="quote-stars" aria-label="5 de 5 estrellas">
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                  <i data-lucide="star" width="14" height="14" fill="currentColor" aria-hidden="true"></i>
+                </div>
+                <blockquote>
+                  “Cambiaron las cerraduras de la oficina con impecable detalle. Se siente una empresa seria y confiable.”
+                </blockquote>
+                <cite>Andrea P.</cite>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="block faq-section" id="preguntas" aria-labelledby="preguntas-title">
+        <div class="wrap faq-layout">
+          <header class="faq-intro section-head reveal">
+            <p class="eyebrow">Dudas frecuentes</p>
+            <h2 class="display" id="preguntas-title">Preguntas que nos hacen mucho</h2>
+            <p class="lead">
+              Respuestas claras, sin letra chica. Si aún te queda algo pendiente, escríbenos y te
+              respondemos al tiro.
+            </p>
+            <a class="btn btn-green faq-intro-cta" data-whatsapp="faq" href="https://wa.me/56978530417">
+              <i data-lucide="message-circle" width="18" height="18" aria-hidden="true"></i>
+              Preguntar por WhatsApp
+            </a>
+          </header>
+
+          <div class="faq reveal" data-faq>
+            <details class="faq-item" open>
+              <summary>
+                <span class="faq-index" aria-hidden="true">01</span>
+                <span class="faq-ico" aria-hidden="true">
+                  <i data-lucide="circle-dollar-sign"></i>
+                </span>
+                <span class="faq-q">¿Me van a cobrar de más al llegar?</span>
+                <span class="faq-toggle" aria-hidden="true">
+                  <i data-lucide="plus" width="18" height="18"></i>
+                </span>
+              </summary>
+              <div class="faq-a">
+                <p>
+                  No. Te damos un valor referencial al contactarnos y, si en terreno aparece algo
+                  distinto, te lo explicamos antes de seguir.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-index" aria-hidden="true">02</span>
+                <span class="faq-ico" aria-hidden="true">
+                  <i data-lucide="shield-check"></i>
+                </span>
+                <span class="faq-q">¿Pueden abrir sin dañar la puerta?</span>
+                <span class="faq-toggle" aria-hidden="true">
+                  <i data-lucide="plus" width="18" height="18"></i>
+                </span>
+              </summary>
+              <div class="faq-a">
+                <p>
+                  Siempre priorizamos abrir sin daño. Si la situación exige otra solución, te lo
+                  avisamos con transparencia.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-index" aria-hidden="true">03</span>
+                <span class="faq-ico" aria-hidden="true">
+                  <i data-lucide="moon"></i>
+                </span>
+                <span class="faq-q">¿Atienden de madrugada?</span>
+                <span class="faq-toggle" aria-hidden="true">
+                  <i data-lucide="plus" width="18" height="18"></i>
+                </span>
+              </summary>
+              <div class="faq-a">
+                <p>
+                  Sí. Estamos disponibles 24/7. Entre las 19:00 y las 09:00 se suma un recargo fijo
+                  de $15.000 al valor del servicio. De día (09:00 a 19:00) no hay recargo.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-index" aria-hidden="true">04</span>
+                <span class="faq-ico" aria-hidden="true">
+                  <i data-lucide="map-pin"></i>
+                </span>
+                <span class="faq-q">¿Qué zonas cubren?</span>
+                <span class="faq-toggle" aria-hidden="true">
+                  <i data-lucide="plus" width="18" height="18"></i>
+                </span>
+              </summary>
+              <div class="faq-a">
+                <p>
+                  Principalmente el sur oriente de Santiago: Puente Alto, La Florida y comunas
+                  cercanas. En Puente Alto y La Florida no se cobra gasto de traslado; en el resto
+                  de la cobertura hay tarifa de desplazamiento según distancia. Si dudas, escríbenos
+                  y te confirmamos en segundos.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-index" aria-hidden="true">05</span>
+                <span class="faq-ico" aria-hidden="true">
+                  <i data-lucide="wallet"></i>
+                </span>
+                <span class="faq-q">¿Cómo puedo pagar?</span>
+                <span class="faq-toggle" aria-hidden="true">
+                  <i data-lucide="plus" width="18" height="18"></i>
+                </span>
+              </summary>
+              <div class="faq-a">
+                <p>
+                  Aceptamos los medios habituales en terreno. Si necesitas boleta o respaldo del
+                  servicio, lo coordinamos contigo.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <section class="cta" id="contacto" aria-labelledby="cta-title">
+        <div class="cta-bg" aria-hidden="true">
+          <img
+            src="assets/images/cta-night.jpg"
+            alt="Servicio de cerrajería de noche: van profesional frente a un hogar iluminado"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="wrap reveal">
+          <h2 id="cta-title">¿Necesitas un cerrajero ahora mismo?</h2>
+          <p>Estamos disponibles las 24 horas.</p>
+          <a class="btn btn-brass btn-lg" data-whatsapp="contact" href="https://wa.me/56978530417">
+            <i data-lucide="message-circle" width="20" height="20" aria-hidden="true"></i>
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#inicio" class="footer-logo-link" aria-label="Cerrajero del Pueblo - Inicio">
+              <img
+                class="footer-logo"
+                src="assets/images/logo.svg?v=4"
+                alt="Cerrajero del Pueblo"
+                width="140"
+                height="140"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <p>
+              Cerrajería de confianza, con la cercanía de un negocio local y el respaldo de una
+              empresa seria.
+            </p>
+          </div>
+          <div>
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#proceso">Proceso</a></li>
+              <li><a href="#precios">Precios</a></li>
+              <li><a href="#cobertura">Cobertura</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#preguntas">Preguntas</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <ul class="footer-contact">
+              <li>
+                <a data-whatsapp="contact" href="https://wa.me/56978530417">
+                  <i data-lucide="message-circle" width="16" height="16" aria-hidden="true"></i>
+                  +56 9 7853 0417
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/cerrajero_del_pueblo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i data-lucide="instagram" width="16" height="16" aria-hidden="true"></i>
+                  @cerrajero_del_pueblo
+                </a>
+              </li>
+              <li>
+                <a href="tel:+56978530417">
+                  <i data-lucide="phone" width="16" height="16" aria-hidden="true"></i>
+                  Llamar ahora
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-rep">
+            <h4>Representante</h4>
+            <p class="footer-rep-name">Yerko Pacheco Espinoza</p>
+            <p class="footer-rep-role">Responsable del servicio</p>
+            <a
+              class="btn btn-brass btn-sm"
+              href="mailto:yerkopacheco.yp@gmail.com?subject=Consulta%20-%20Cerrajero%20del%20Pueblo"
+              aria-label="Enviar correo a Yerko Pacheco Espinoza"
+            >
+              <i data-lucide="mail" width="15" height="15" aria-hidden="true"></i>
+              Contactar por correo
+            </a>
+          </div>
+        </div>
+        <div class="footer-base">
+          <p>© <span id="year"></span> Cerrajero del Pueblo. Todos los derechos reservados.</p>
+          <p>Servicio de cerrajería profesional · 24/7</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="fab" data-whatsapp="fab" href="https://wa.me/56978530417" aria-label="Abrir WhatsApp">
+      <i data-lucide="message-circle" width="24" height="24" aria-hidden="true"></i>
+    </a>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+    <script src="assets/js/main.js" charset="utf-8" defer></script>
+  </body>
+</html>
